@@ -1,30 +1,66 @@
-# React + TypeScript + Vite
+# WordFinder App React with Typescript - QU Developer Challenge
+Created with Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Steps to run:
 
-Currently, two official plugins are available:
+- npm install
+- npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Steps for test
 
-## Expanding the ESLint configuration
+- Add in the Matrix field a list of strings separated with commas simulating the rows of the matrix:
+  ### Example
+  VOXFROGDWBEARQT,
+  OHCINCINEROARXO,
+  IBELEPHANTXUCAA,
+  NEMONKEYQPQFPED,
+  CALBQIITQQATOAD,
+  IRRIDPANDALILPG,
+  NZDEAIBDHLLJAAO,
+  ETXDHPENGUINRNA,
+  ROKMQPAIXSGCBDT,
+  OARLNCROTOADEAK,
+  ADDGIRAFFETYAYG,
+  RFCINCINEROARLO,
+  TIGERHMOIZRCBHA,
+  INCINEROARLIONT,
+  OJDMXINCINEROAR
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  |     Matrix     |
+  | -------------- |
+  | VOXFROGDWBEARQT|
+  | OHCINCINEROARXO|
+  | IBELEPHANTXUCAA|
+  | NEMONKEYQPQFPED|
+  | CALBQIITQQATOAD|
+  | IRRIDPANDALILPG|
+  | NZDEAIBDHLLJAAO|
+  | ETXDHPENGUINRNA|
+  | ROKMQPAIXSGCBDT|
+  | OARLNCROTOADEAK|
+  | ADDGIRAFFETYAYG|
+  | RFCINCINEROARLO|
+  | TIGERHMOIZRCBHA|
+  | INCINEROARLIONT|
+  | OJDMXINCINEROAR|
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  
+- Add in the Words field a list of words to search separated with commas:
+  ### Example
+  * ALLIGATOR,
+  * BEAR,
+  * INCINEROAR,
+  * ELEPHANT,
+  * FROG,
+  * GIRAFFE,
+  * LION,
+  * MONKEY,
+  * PANDA,
+  * PENGUIN,
+  * TOAD,
+  * POLARBEAR,
+  * TIGER,
+  * GOAT
+    
+> Note: To generate a new Matrix, check the Generate Matrix checkbox and add the list of words in the words field.
+  
