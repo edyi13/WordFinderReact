@@ -1,0 +1,15 @@
+.word-count-horizontal {
+    display: flex;
+  }
+  
+  .count-square {
+    width: auto; /* Adjust the width of the square as needed */
+    height: auto; /* Adjust the height of the square as needed */
+    padding: 5px;
+    background-color: rgb(24, 129, 27);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; /* Add margin between squares */
+  }

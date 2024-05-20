@@ -1,0 +1,19 @@
+.square-matrix {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 40px; /* Adjust the size of the square cell as needed */
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
