@@ -21,7 +21,7 @@ export const WordFinder = ({ matrix, wordStream }: Props) => {
             const baseUrl = 'https://word-finder-dev.azurewebsites.net/api/v1/WordFinder/GetMostRepeatedWords';
             const queryParams = new URLSearchParams();
             matrixParam.forEach((value, index) => { 
-                queryParams.append(`matrix[${index}]`, value); 
+                queryParams.append(`matrix[${index}]`, value);
             });
             wordStreamParam.forEach((value, index) => { 
                 queryParams.append(`wordStream[${index}]`, value); 
@@ -67,13 +67,13 @@ export const WordFinder = ({ matrix, wordStream }: Props) => {
 
     const handleMatrixChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = event.target;
-        setMatrix(value.split(','));
+        setMatrix(value.replace(/\s/g, "").split(','));
         console.log(matrixInput)
     };
 
     const handleWordStreamChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = event.target;
-        setWordStream(value.split(','));
+        setWordStream(value.replace(/\s/g, "").split(','));
         console.log(wordStreamInput)
     };
 
@@ -97,15 +97,16 @@ export const WordFinder = ({ matrix, wordStream }: Props) => {
                 type="text" 
                 placeholder="Enter matrix values" 
                 onChange={handleMatrixChange}
-                style={{ width: '300px', height: '50px' }}
+                style={{ width: '500px', height: '25px', fontSize: '12px' }}
             />
             <br />
             <label htmlFor="word-stream-input">Words: </label>
             <input
                 id="word-stream-input"
-                type="text" 
+                type="text"                
                 placeholder="Enter word stream values" 
-                onChange={handleWordStreamChange} 
+                onChange={handleWordStreamChange}
+                style={{ width: '500px', height: '25px', fontSize: '12px' }}
             />
             <br />
             <br />
